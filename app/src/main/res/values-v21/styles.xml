@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="editTextLarge">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@android:color/background_light</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:textSize">36dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+
+    <style name="labelLarge">
+        <item name="android:layout_width">254dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:enabled">true</item>
+        <item name="android:layout_weight">0.40</item>
+    </style>
+</resources>

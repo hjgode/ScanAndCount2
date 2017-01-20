@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Lagerort Daten Einstellungen"
+        android:key="+@string/pref_key_lagerort_settings">
+
+        <CheckBoxPreference
+            android:key="pref_key_lagerort_enabled"
+            android:title="@string/pref_title_lagerort"
+            android:summary="@string/pref_description_lagerort"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Scanner Einstellungen"
+        android:key="+@string/pref_key_scanner_settings"
+        >
+        <CheckBoxPreference
+            android:key="pref_key_scan_menge_enabled"
+            android:title="@string/pref_title_scan_quantity"
+            android:summary="@string/pref_description_scan_quantity"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:key="pref_key_scan_lagerort_enabled"
+            android:title="@string/pref_title_scan_lagerort"
+            android:summary="@string/pref_description_scan_lagerort"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

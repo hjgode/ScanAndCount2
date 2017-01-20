@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="hsm.demo.scanandcount2.scanandcount2">
+
+    <item android:title="Einstellungen"
+        android:id="@+id/action_settings"
+        />
+
+    <item android:title="@string/mnu_txt_datafile"
+            android:orderInCategory="101"
+            android:id="@+id/action_datafile" >
+        <menu>
+            <item
+                android:title="Show List"
+                android:orderInCategory="102"
+                android:id="@+id/action_datafile_list"
+                />
+            <item
+                android:title="Clear"
+                android:orderInCategory="103"
+                android:id="@+id/action_datafile_clear"
+                />
+            <item
+                android:title="Export CSV"
+                android:orderInCategory="104"
+                android:id="@+id/action_datafile_export"
+                />
+        </menu>
+    </item>
+</menu>
