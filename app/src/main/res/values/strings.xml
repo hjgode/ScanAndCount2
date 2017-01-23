@@ -40,6 +40,7 @@
     <string name="pref_title_scan_lagerort">Scanner Verwendung im Lagerort-Feld erlauben.</string>
     <string name="pref_description_scan_lagerort">Im Feld Lagerort die Verwendung des Scanners erlauben.
         Wenn nicht aktiviert, ist nur manuelle Eingabe möglich.</string>
-    <string name="mnu_txt_datafile">Daten Datei</string>
+
+    <string name="mnu_txt_datafile">Daten Datei...</string>
 
 </resources>

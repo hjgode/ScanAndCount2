@@ -17,6 +17,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.InputType;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -182,19 +183,6 @@ public class scanandcount2 extends AppCompatActivity implements BarcodeReader.Ba
                 return true;   // Consume the event
             }
         });
-
-
-//        chkLagerort = (CheckBox) findViewById(R.id.chkUseLagerort);
-//        chkLagerort.setChecked(mUseLagerort);
-//        chkLagerort.setOnClickListener(myCheckBoxListener);
-//
-//        chkScanQuantity=(CheckBox)findViewById(R.id.chkScanQuantity);
-//        chkScanQuantity.setChecked(mScanQuantity);
-//        chkScanQuantity.setOnClickListener(myCheckBoxListener);
-//
-//        chkScanLager=(CheckBox)findViewById(R.id.chkScanLager);
-//        chkScanLager.setChecked(mScanLager);
-//        chkScanLager.setOnClickListener(myCheckBoxListener);
 
         showHideLagerort();
 
@@ -435,17 +423,6 @@ public class scanandcount2 extends AppCompatActivity implements BarcodeReader.Ba
 //        mScanQuantity=sharedPref.getBoolean(USE_SCANQUANTITY, false);
     }
 
-//    @Override
-//    public void onSaveInstanceState(Bundle savedInstanceState) {
-//        // Save the user's current game state
-//        savedInstanceState.putBoolean(USE_LAGERORT, mUseLagerort);
-//        savedInstanceState.putBoolean(USE_SCANLAGER, mScanLager);
-//        savedInstanceState.putBoolean(USE_SCANQUANTITY, mScanQuantity);
-//
-//        // Always call the superclass so it can save the view hierarchy state
-//        super.onSaveInstanceState(savedInstanceState);
-//    }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -593,8 +570,6 @@ public class scanandcount2 extends AppCompatActivity implements BarcodeReader.Ba
                     if (hasFocus) {
                         txtCurrent = txtData;
                         currentState = state.data;
-                    }
-                    if (hasFocus) {
                         txtData.setBackgroundColor(getResources().getColor(android.R.color.white));
                         hideKeyboard();
                         //txtData.setSelection(0, txtData.getText().length());
@@ -605,8 +580,7 @@ public class scanandcount2 extends AppCompatActivity implements BarcodeReader.Ba
                     if (hasFocus) {
                         txtCurrent = txtQuantity;
                         currentState = state.quantity;
-                    }
-                    if (hasFocus) {
+                        txtQuantity.setInputType(InputType.TYPE_CLASS_NUMBER);
                         txtQuantity.setBackgroundColor(getResources().getColor(android.R.color.white));
                         txtQuantity.setSelection(0, txtQuantity.getText().length());
                         if(!mScanQuantity)
@@ -620,8 +594,6 @@ public class scanandcount2 extends AppCompatActivity implements BarcodeReader.Ba
                     if (hasFocus) {
                         txtCurrent = txtLagerort;
                         currentState = state.lager;
-                    }
-                    if (hasFocus) {
                         txtLagerort.setBackgroundColor(getResources().getColor(android.R.color.white));
                         txtLagerort.setSelection(0, txtLagerort.getText().length());
                         showKeyboard();

@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="mnu_txt_datafile">Daten Datei</string>
+    <string name="app_name">ScanAndCount2</string>
+    <string name="action_settings">Settings</string>
+    <string name="numberLabelText">Menge</string>
+    <string name="dataLabelText">Daten</string>
+    <string name="btnCancelText">Verwerfen</string>
+    <string name="btnSaveText">Speichern</string>
+    <string name="btnListCaption">Liste</string>
+    <string name="btnClearLabel">Clear</string>
+
+    <string name="txtYesNoDialogTitle">Bitte bestätigen</string>
+    <string name="txtYesNoDialogYesButtonText">Ja</string>
+    <string name="txtYesNoDialogNoButtonText">Nein</string>
+    <string name="txtYesNoDialogText">Sollen alle Daten gelöscht werden?</string>
+    <string name="txtMessageNoDelete">Daten werden nicht gelöscht</string>
+    <string name="txtMessageYesDeleted">Daten wurden gelöscht</string>
+    <string name="btnExportCaption">Save CSV</string>
+    <string name="btnKeybdCaption">keybd</string>
+    <string name="lblLagerort">Lagerort</string>
+    <string name="rLagerort">Lagerort</string>
+    <string name="preference_file_key">hsm.demo.scanandcount.prefs</string>
+    <string name="bUseLagerort">true</string>
+    <string name="title_activity_scan_and_count_settings">Scan and Count Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Lagerort settings -->
+    <string name="pref_header_lagerort">Lagerort</string>
+    <string name="pref_title_lagerort">Lagerort verwenden</string>
+    <string name="pref_description_lagerort">Lagerort anzeigen und verwenden.</string>
+
+    <!-- Scan quantity settings -->
+    <string name="pref_header_scan_quantity">Menge Eingabe</string>
+    <string name="pref_title_scan_quantity">Scanner Verwendung im Mengen-Feld erlauben.</string>
+    <string name="pref_description_scan_quantity">Im Feld Menge die Verwendung des Scanners erlauben.
+        Wenn nicht aktiviert, ist nur manuelle Eingabe möglich.</string>
+
+    <!-- Scan quantity settings -->
+    <string name="pref_header_scan_lagerort">Lagerort Eingabe</string>
+    <string name="pref_title_scan_lagerort">Scanner Verwendung im Lagerort-Feld erlauben.</string>
+    <string name="pref_description_scan_lagerort">Im Feld Lagerort die Verwendung des Scanners erlauben.
+        Wenn nicht aktiviert, ist nur manuelle Eingabe möglich.</string>
+
+    <string name="mnu_txt_datafile">Daten Datei...</string>
+
 </resources>
